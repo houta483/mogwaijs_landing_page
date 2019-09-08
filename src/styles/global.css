@@ -1,4 +1,7 @@
-html {
+ html {
   background-color: #14a7ff;
+}
 
+.name {
+  border-block-color: green;
 }
