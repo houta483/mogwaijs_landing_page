@@ -1,24 +1,32 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useState } from "react"
+import DropDownMenu from "./dropdownMenu.js"
 
-const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem`}}>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
-export default ({ children }) => (
-  <div style={{ margin: `3rem auto`, maxWidth: 800, padding: `0 1rem` }}>
-  <header style={{ marginBottom: `1.5rem` }}>
-      <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-        <h3 style={{ display: `inline` }}>MogwaiJS</h3>
-      </Link>
-      <ul style={{ listStyle: `none`, float: `right` }}>
-        <ListLink to="/">Home</ListLink>
-        <ListLink to="/documentation/">Documentation</ListLink>
-        <ListLink to="/examples/">Examples</ListLink>
-        <ListLink to="/aboutUs">About Us</ListLink>
-      </ul>
-    </header>    {children}
-  </div>
-)
 
+
+
+export default ( props ) => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  // const [currentSelection, setCurrentSelection] = useState(null);
+  console.log(props)
+
+  const handleMenuClick = () => {
+    setModalOpen(isModalOpen ? false : true)
+  }
+
+  return (
+    <div style={{ padding: `0 1rem`, paddingBottom: "0" }}>
+      <div className="header" style={{ marginBottom: `1.5rem` }}>
+        <h3 style={{ marginBottom: "0", paddingTop: "1.8rem" }}>MogwaiJS</h3>
+
+        <div>
+          <i onClick={handleMenuClick} id="hamburger-menu" className="material-icons">
+            menu
+          </i>
+          {isModalOpen ? <DropDownMenu pathname={props.location.pathname}/> : null}
+        </div>
+      </div>
+
+      {props.children}
+    </div>
+  )
+}
