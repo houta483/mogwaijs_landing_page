@@ -7,11 +7,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sharp`,
+      resolve: `gatsby-plugin-sharp`, 
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         useMozJpeg: false,
         stripMetadata: true,
         defaultQuality: 75,
+        fonts: [
+          'material icons'
+        ]
       },
     },
     `gatsby-plugin-sharp`, `gatsby-transformer-sharp`
