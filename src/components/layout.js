@@ -3,13 +3,8 @@ import DropDownMenu from "./dropdownMenu.js"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-
-
-
 export default ( props ) => {
   const [isModalOpen, setModalOpen] = useState(false);
-
-  console.log(props)
 
   const handleMenuClick = () => {
     setModalOpen(isModalOpen ? false : true)

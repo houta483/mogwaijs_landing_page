@@ -19,14 +19,18 @@ export default ({location}) => (
      </div>
      </div>
    <div className="video-explanation-div">
+
      
      <iframe src="https://giphy.com/embed/xT9IgzoKnwFNmISR8I" frameBorder="0" class="giphy-embed" allowFullScreen ></iframe>
     <div className="giphy-info">
+
+     <iframe src="https://giphy.com/embed/xT9IgzoKnwFNmISR8I" width="480" height="429" frameBorder="0" class="giphy-embed" allowFullScreen ></iframe>
      <p className="information2">MogwaiJS brings to life an intuitive OGM, keeping
        in mind the declarative nature of the Cypher query language.
        With the ever-increasing popularity of graph databses,
        MogwaiJS makes the process of querying graph Databases
        even simpler in Javascript environments. <br></br><i className="arrow left"></i></p>
+
        </div>
      </div>
   </Layout>
