@@ -1,19 +1,20 @@
-import React from "react";
-import styles from "../styles/global.css"
-import { Link } from 'gatsby';
+import React from "react"
 
 class aboutTeamMembers extends React.Component {
   constructor(props) {
-   super(props) ;
-   this.state = {
-     name: 'Tanner',
-     picture: 'insert pic here',
-   }
+   super(props);
+    
   }
   render() {
     return (
-      <div className='name'>
-        My name is {this.state.name}
+      <div className='member'>
+        <p className='name'>{this.props.name}</p>
+          <div className="biopic">
+          <p className='bio'>{this.props.bio}​</p>
+          <img src={this.props.picture}/>
+          </div>
+        <a className = 'linkedIn' href={this.props.linkedIn}> LinkedIn </a> 
+       
       </div>
     )
   }

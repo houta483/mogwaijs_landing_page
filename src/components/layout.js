@@ -1,13 +1,10 @@
 import React, { useState } from "react"
 import DropDownMenu from "./dropdownMenu.js"
 
-
-
-
 export default ( props ) => {
   const [isModalOpen, setModalOpen] = useState(false);
   // const [currentSelection, setCurrentSelection] = useState(null);
-  console.log(props)
+  // console.log(props)
 
   const handleMenuClick = () => {
     setModalOpen(isModalOpen ? false : true)

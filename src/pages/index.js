@@ -3,28 +3,28 @@ import Layout from "../components/layout"
 
 export default ({location}) => (
   <Layout location={location}>
-   <div class="image-explanation-div">
+   <div className="image-explanation-div">
      <div>
-     <h1 class='image-heading'>Cypher, Cloud Hosted Databases, Javascript</h1>
-     <p class="information">MogwaiJS brings to life an intuitive OGM, keeping
+     <h1 className='image-heading'>Cypher, Cloud Hosted Databases, Javascript</h1>
+     <p className="information">MogwaiJS brings to life an intuitive OGM, keeping
        in mind the declarative nature of the Cypher query language.
        With the ever-increasing popularity of graph databses,
        MogwaiJS makes the process of querying graph Databases
-       even simpler in Javascript environments. <i class="arrow right"></i>
+       even simpler in Javascript environments. <i className="arrow right"></i>
      </p>
 
      </div>
-     <div class="logo-image">
-     <img class="image" src="logo.png"></img>
+     <div className="logo-image">
+     <img className="image" src="logo.png"></img>
      </div>
      </div>
-   <div class="video-explanation-div">
+   <div className="video-explanation-div">
      <iframe src="https://giphy.com/embed/xT9IgzoKnwFNmISR8I" width="480" height="429" frameBorder="0" class="giphy-embed" allowFullScreen ></iframe>
-     <p class="information2">MogwaiJS brings to life an intuitive OGM, keeping
+     <p className="information2">MogwaiJS brings to life an intuitive OGM, keeping
        in mind the declarative nature of the Cypher query language.
        With the ever-increasing popularity of graph databses,
        MogwaiJS makes the process of querying graph Databases
-       even simpler in Javascript environments. <br></br><i class="arrow left"></i></p>
+       even simpler in Javascript environments. <br></br><i className="arrow left"></i></p>
      </div>
   </Layout>
 )
