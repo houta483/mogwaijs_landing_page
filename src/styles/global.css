@@ -97,7 +97,8 @@ h3 {
   grid-template-columns: minmax(280px, 750px) minmax(280px, 750px);
   margin-top: 10vh;
   margin-bottom: 10vh;
-
+  padding-left: 5vw;
+  padding-right: 5vw;
   background: #FCF9FE;
   border-radius: 10px;
 }
@@ -134,7 +135,6 @@ h3 {
 
 .giphy-embed {
   box-shadow: 0 6px 15px 9px rgba(72,72,72,.4);
-  margin-left: 5vw;
   margin-top: 5vh;
   max-width: 100%;
   max-height: 100%;
@@ -165,6 +165,12 @@ h3 {
   font-family: 'Raleway', sans-serif;
   margin-top: 10px;
   list-style-type: decimal;
+}
+
+/* About us page */
+
+.linkedIn {
+  color: #0077b5;
 }
 
 

@@ -15,13 +15,14 @@ export default ({location}) => (
 
      </div>
      <div className="logo-image">
-     <img className="image" src="logo.png"></img>
+     <img src="logo.png"/>
      </div>
      </div>
    <div className="video-explanation-div">
      
-     <iframe src="https://giphy.com/embed/xT9IgzoKnwFNmISR8I" frameBorder="0" class="giphy-embed" allowFullScreen ></iframe>
+   <iframe src='https://gfycat.com/ifr/FamiliarObviousGazelle' className="giphy-embed" frameborder='0' scrolling='no'   allowfullscreen></iframe>
     <div className="giphy-info">
+     
      <p className="information2">MogwaiJS brings to life an intuitive OGM, keeping
        in mind the declarative nature of the Cypher query language.
        With the ever-increasing popularity of graph databses,
