@@ -27,7 +27,7 @@ h3 {
   grid-template-columns: minmax(280px, 750px) minmax(280px, 750px);
   grid-gap: 5vw;
   margin-left: 5vw;
-  margin-top: 9vh;
+  margin-top: 10vh;
 }
 
 .material-icons {
