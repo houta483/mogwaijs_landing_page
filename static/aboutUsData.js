@@ -12,7 +12,8 @@ const aboutUsData = {
     `Taylor is originally from Little Rock, Arkansas--which he still considers as home. Before Los Angeles (where Taylor lives now), he was living in New Orleans, Louisiana, which is still his favorite city in the world. Previously Taylor repaired and rebuilt coffee equipment (i.e. espresso machines, coffee brewers, etc.). Before that, Taylor was in school for three years studying theology.`
   ],
   pictures: [eric, neftali, tanner, taylor],
-  linkedIn: ['https://www.linkedin.com/in/ericstallings/', 'https://www.linkedin.com/in/neftalildominguez/', 'https://www.linkedin.com/in/tanner-houghton-180ba114b/', 'https://www.linkedin.com/in/taylorburrington/']
+  linkedIn: ['https://www.linkedin.com/in/ericstallings/', 'https://www.linkedin.com/in/neftalildominguez/', 'https://www.linkedin.com/in/tanner-houghton-180ba114b/', 'https://www.linkedin.com/in/taylorburrington/'],
+  gitHub: ['']
 }
 
 export default aboutUsData;
