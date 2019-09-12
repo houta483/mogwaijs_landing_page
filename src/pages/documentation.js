@@ -3,10 +3,15 @@ import Layout from "../components/layout"
 
 export default ({location}) => (
   <Layout location={location}>
-    <h1>Documentation</h1>
-    <b>Table of Contents</b>
-    <ul>
+    <div className="documentation-sidebar">
+    <h3 className="main-heading">Documentation</h3>
+    <b className="scroll-header">Using MogwaiJS</b>
+    <ul className="documentation-topics-list">
       <li>Installation</li>
+      <li>Syntax</li>
+      <li>Under The Hood</li>
+      <li>Demo</li>
     </ul>
+    </div>
   </Layout>
 )
