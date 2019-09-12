@@ -1,58 +1,33 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import Style from "../styles/style.css"
 import AboutTeamMembers from "../components/aboutTeamMembers"
 import aboutUsData from "../../static/aboutUsData"
 
-export default class Data extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      memberNames: aboutUsData.memberNames,
-      memberBios: aboutUsData.memberBios,
-      pictures: aboutUsData.pictures,
-      linkedIn: aboutUsData.linkedIn
-    }
+export default props => {
+  const [memberData] = useState(aboutUsData)
+
+  const membersArray = []
+
+  for (let i = 0; i < 4; i++) {
+    membersArray.push(
+      <AboutTeamMembers
+        name={memberData.memberNames[i]}
+        bio={memberData.memberBios[i]}
+        picture={memberData.pictures[i]}
+        linkedIn={memberData.linkedIn[i]}
+        key={i}
+      />
+    )
   }
 
-render() {
-  // for loop
   return (
-    <Layout>
+    <Layout location={props.location}>
+      <div className="aboutUs-heading">
       <h1 className="aboutUs">About Us</h1>
-      <b>The MogwaiJS Team</b>
-      <div className ="form">
-
-        <AboutTeamMembers 
-        name = {this.state.memberNames[0]}
-        bio = {this.state.memberBios[0]}
-        picture = {this.state.pictures[0]}
-        linkedIn = {this.state.linkedIn[0]}
-        />
-
-        <AboutTeamMembers 
-        name = {this.state.memberNames[1]}
-        bio = {this.state.memberBios[1]}
-        picture = {this.state.pictures[1]}
-        linkedIn = {this.state.linkedIn[1]}
-        />
-
-        <AboutTeamMembers 
-        name = {this.state.memberNames[2]}
-        bio = {this.state.memberBios[2]}
-        picture = {this.state.pictures[2]}
-        linkedIn = {this.state.linkedIn[2]}
-        />
-
-        <AboutTeamMembers 
-        name = {this.state.memberNames[3]}
-        bio = {this.state.memberBios[3]}
-        picture = {this.state.pictures[3]}
-        linkedIn = {this.state.linkedIn[3]}
-        />
-
+      <h5 className="subheading">The MogwaiJS Team</h5>
       </div>
+      <div className="form">{membersArray}</div>
     </Layout>
-      )
-  }
+  )
 }

@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amiri|Source+Sans+Pro&display=swap');
+
 ul {
   list-style-type: none;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 750px));
+  grid-gap: 50px;
+  margin-bottom: 35px;
 }
 
 .member {
@@ -14,36 +26,37 @@ ul {
   border-radius: 10%;
   padding-top: 20px;
   min-width: 700px; */
-  display: flex;
+
+  
     /* margin-bottom: 20px; */
     /* border: black; */
 
-    padding-top: 20px;
-    margin-bottom: 20px;
+    /* padding-top: 20px;
+    margin-bottom: 20px; */
+    /* 
     flex-direction: column;
-    min-width: 1111px;
+    min-width: 1111px; */
 }
 
 .name {
   /* position: relative;
   left: 47%;
   height: 0px; */
-  text-decoration: underline;
-  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
 }
 
 .biotext {
   display: flex;
-  padding-top: 20px;
+ 
   width: 100px;
   padding-left: -100px;
 }
 
 .bio{
-  padding-top: 25px;
-  padding-right: 50px;
-  padding-left: -20px;
-  min-width: 819px;
+ padding-left: 20px;
+ font-family: 'Raleway', sans-serif;
+ font-size: .85rem;
 }
 
 .biopic{
@@ -51,30 +64,54 @@ ul {
   margin: -40px 20px auto 50px;
 }
 
-.linkedIn {
+/* .linkedIn {
+ padding: 5px;
+} */
+
+
+
+.cards {
   display: flex;
-  position: relative;
-  bottom: 50px;
-  padding-left: 50px;
+  box-shadow: 0 2px 3px 5px rgb(142, 108, 165, .1);
 }
 
-.linkedIn:hover{
-  color: blue;
-  transition: all 0.3s ease;
-  transform: skew(-10deg);
-}
+/* .icon-and-name {
+  display: flex;
+  justify-content: center;
+} */
 
-img {
-  border-radius: 20%;
-  top: 0;
+.biopictures {
+  border-radius: 100px;
   max-width: 200px;
   max-height: 230px;
-  right: 0%;
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-top: 1%;
-  margin-right: 2%;
-  width: 40%;
+ float: right;
+ margin: 10px;
 }
 
+.bio-block {
+  text-align: center;
+}
+
+.aboutUs-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-and-name {
+  margin-top: 10px;
+}
+
+.aboutUs {
+  border-right: 3px solid rgb(142, 108, 165);
+  margin-right: 5px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.github {
+  margin-left: 5px;
+}
+
+.subheading {
+  margin-top: 25px;
+}
