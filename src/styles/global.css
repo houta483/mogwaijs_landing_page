@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 * {
   box-sizing: border-box;
@@ -23,7 +24,7 @@ h3 {
 }
 .image-explanation-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: minmax(280px, 750px) minmax(280px, 750px);
   grid-gap: 5vw;
   margin-left: 5vw;
   margin-top: 10vh;
@@ -35,18 +36,18 @@ h3 {
 
 .image-heading {
   font-family: 'Montserrat', sans-serif;
-  -webkit-animation: fadeIn 5s; /* Safari 4+ */
-  -moz-animation:    fadeIn 5s; /* Fx 5+ */
-  -o-animation:      fadeIn 5s; /* Opera 12+ */
-  animation:         fadeIn 5s; 
+  -webkit-animation: fadeIn 3s; /* Safari 4+ */
+  -moz-animation:    fadeIn 3s; /* Fx 5+ */
+  -o-animation:      fadeIn 3s; /* Opera 12+ */
+  animation:         fadeIn 3s; 
 }
 
 .information {
   font-family: 'Raleway', sans-serif;
-  -webkit-animation: fadeIn 5s; /* Safari 4+ */
-  -moz-animation:    fadeIn 5s; /* Fx 5+ */
-  -o-animation:      fadeIn 5s; /* Opera 12+ */
-  animation:         fadeIn 5s; 
+  -webkit-animation: fadeIn 3s; /* Safari 4+ */
+  -moz-animation:    fadeIn 3s; /* Fx 5+ */
+  -o-animation:      fadeIn 3s; /* Opera 12+ */
+  animation:         fadeIn 3s; 
 }
 
 .lists-link {
@@ -72,24 +73,37 @@ h3 {
   user-select: none;
 }
 
+#github-icon {
+  margin: 5px 8px 5px 5px;
+}
+
+.giphy-info {
+  display: flex;
+  align-items: center;
+}
+
 .information2 {
   font-family: 'Raleway', sans-serif;
-  -webkit-animation: fadeIn 5s; /* Safari 4+ */
-  -moz-animation:    fadeIn 5s; /* Fx 5+ */
-  -o-animation:      fadeIn 5s; /* Opera 12+ */
-  animation:         fadeIn 5s; 
+  color: #6458Ae;
+  margin: 5px;
+  -webkit-animation: fadeIn 3s; /* Safari 4+ */
+  -moz-animation:    fadeIn 3s; /* Fx 5+ */
+  -o-animation:      fadeIn 3s; /* Opera 12+ */
+  animation:         fadeIn 3s; 
 }
 
 .video-explanation-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  margin-left: 2vw;
-
+  grid-template-columns: minmax(280px, 750px) minmax(280px, 750px);
   margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  background: #FCF9FE;
+  border-radius: 10px;
 }
 
 .right {
-  border: solid black;
+  border: solid #6458Ae;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -110,7 +124,7 @@ h3 {
 }
 
 .left {
-  border: solid black;
+  border: solid #6458Ae;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -119,14 +133,42 @@ h3 {
 }
 
 .giphy-embed {
-  border-radius: 20px;
   box-shadow: 0 6px 15px 9px rgba(72,72,72,.4);
+  margin-left: 5vw;
+  margin-top: 5vh;
+  max-width: 100%;
+  max-height: 100%;
+  width: 480px;
+  height: 429px;
+  float: left;
 }
 
 
-.name {
-  border-block-color: green;
+.main-heading {
+  font-family: 'Montserrat', sans-serif;
+
 }
+
+.documentation-sidebar {
+  width: 15em;
+  padding: 15px;
+  /* border-right: 1px solid rgb(161, 161, 161); */
+  overflow: scroll;
+}
+
+.scroll-header {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: underline;
+}
+
+.documentation-sidebar ul {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 10px;
+  list-style-type: decimal;
+}
+
+
+
 
 @-webkit-keyframes fadeIn {
   0%   { opacity: 0; }
@@ -143,4 +185,24 @@ h3 {
 @keyframes fadeIn {
   0%   { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* responsive concerns */
+
+@media only screen and (max-width: 1138px) {
+  .information2 {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 45px;
+    -webkit-animation: fadeIn 3s; /* Safari 4+ */
+    -moz-animation:    fadeIn 3s; /* Fx 5+ */
+    -o-animation:      fadeIn 3s; /* Opera 12+ */
+    animation:         fadeIn 3s; 
+  }
+}
+
+@media only screen and (min-width: 1320px){
+  .main-content {
+    max-width: 1320px;
+    margin: auto;
+  }
 }
