@@ -36,18 +36,18 @@ h3 {
 
 .image-heading {
   font-family: 'Montserrat', sans-serif;
-  -webkit-animation: fadeIn 3s; /* Safari 4+ */
-  -moz-animation:    fadeIn 3s; /* Fx 5+ */
-  -o-animation:      fadeIn 3s; /* Opera 12+ */
-  animation:         fadeIn 3s; 
+  -webkit-animation: fadeIn 2s; /* Safari 4+ */
+  -moz-animation:    fadeIn 2s; /* Fx 5+ */
+  -o-animation:      fadeIn 2s; /* Opera 12+ */
+  animation:         fadeIn 2s; 
 }
 
 .information {
   font-family: 'Raleway', sans-serif;
-  -webkit-animation: fadeIn 3s; /* Safari 4+ */
-  -moz-animation:    fadeIn 3s; /* Fx 5+ */
-  -o-animation:      fadeIn 3s; /* Opera 12+ */
-  animation:         fadeIn 3s; 
+  -webkit-animation: fadeIn 2s; /* Safari 4+ */
+  -moz-animation:    fadeIn 2s; /* Fx 5+ */
+  -o-animation:      fadeIn 2s; /* Opera 12+ */
+  animation:         fadeIn 2s; 
 }
 
 .lists-link {
@@ -71,11 +71,13 @@ h3 {
 #hamburger-menu:hover {
   cursor: pointer;
   user-select: none;
+  color: #777;
 }
 
 #github-icon {
   margin: 5px 8px 5px 5px;
 }
+
 
 .giphy-info {
   display: flex;
@@ -86,15 +88,16 @@ h3 {
   font-family: 'Raleway', sans-serif;
   color: #6458Ae;
   margin: 5px;
-  -webkit-animation: fadeIn 3s; /* Safari 4+ */
-  -moz-animation:    fadeIn 3s; /* Fx 5+ */
-  -o-animation:      fadeIn 3s; /* Opera 12+ */
-  animation:         fadeIn 3s; 
+  -webkit-animation: fadeIn 2s; /* Safari 4+ */
+  -moz-animation:    fadeIn 2s; /* Fx 5+ */
+  -o-animation:      fadeIn 2s; /* Opera 12+ */
+  animation:         fadeIn 2s; 
 }
 
 .video-explanation-div {
   display: grid;
   grid-template-columns: minmax(280px, 750px) minmax(280px, 750px);
+  grid-gap: 5vw;
   margin-top: 10vh;
   margin-bottom: 10vh;
   padding-left: 5vw;
@@ -136,10 +139,9 @@ h3 {
 .giphy-embed {
   box-shadow: 0 6px 15px 9px rgba(72,72,72,.4);
   margin-top: 5vh;
+  margin-bottom: 5vh;
   max-width: 100%;
   max-height: 100%;
-  width: 480px;
-  height: 429px;
   float: left;
 }
 
@@ -152,6 +154,8 @@ h3 {
 .documentation-sidebar {
   width: 15em;
   padding: 15px;
+  min-width: 250px;
+  flex: 0 0 auto;
   /* border-right: 1px solid rgb(161, 161, 161); */
   overflow: scroll;
 }
@@ -167,12 +171,39 @@ h3 {
   list-style-type: decimal;
 }
 
+.DocBlock {
+  margin-left: 5px;
+  padding: 15px;
+  flex: 1;
+}
+
+.docs-paragraph {
+  margin-left: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.code-div {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  background-color: #FCF9FE;
+  border-radius: 20px;
+}
+
+.doc-heading {
+  margin-top: 10px;
+}
 /* About us page */
 
 .linkedIn {
   color: #0077b5;
 }
 
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 
@@ -199,10 +230,10 @@ h3 {
   .information2 {
     font-family: 'Raleway', sans-serif;
     margin-left: 45px;
-    -webkit-animation: fadeIn 3s; /* Safari 4+ */
-    -moz-animation:    fadeIn 3s; /* Fx 5+ */
-    -o-animation:      fadeIn 3s; /* Opera 12+ */
-    animation:         fadeIn 3s; 
+    -webkit-animation: fadeIn 2s; /* Safari 4+ */
+    -moz-animation:    fadeIn 2s; /* Fx 5+ */
+    -o-animation:      fadeIn 2s; /* Opera 12+ */
+    animation:         fadeIn 2s; 
   }
 }
 
@@ -210,5 +241,21 @@ h3 {
   .main-content {
     max-width: 1320px;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .video-explanation-div {
+    grid-template-columns: minmax(280px, 750px);
+  }
+
+  .image-explanation-div {
+    grid-template-columns: minmax(280px, 750px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
   }
 }

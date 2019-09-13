@@ -11,16 +11,18 @@ class aboutTeamMembers extends React.Component {
   render() {
     return (
       
-      <div className='member'>
+     
         <div className="cards">
-         <div>
+         <div className="card-div">
         <div className = "bio-block">
           
           <div className="picture-block">
          <img className="biopictures" src={this.props.picture}/>
          <div className="icon-and-name">
+         
          <a className = 'linkedIn' href={this.props.linkedIn}><FontAwesomeIcon icon={faLinkedin}/></a> 
-        <a className = 'github' href={this.props.linkedIn}><FontAwesomeIcon icon={faGithub}/></a> 
+        <a className = 'github' href={this.props.gitHub}><FontAwesomeIcon icon={faGithub}/></a> 
+      
          <p className='name'>{this.props.name}</p>
          </div>
          {/* <div className="icon-and-name"> */}
@@ -36,7 +38,7 @@ class aboutTeamMembers extends React.Component {
      
           </div>
         </div>
-      </div>
+    
      
     )
   }

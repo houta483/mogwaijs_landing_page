@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-
+import gif from "../../static/landing-page-movie.mov.gif"
 export default ({location}) => (
   <Layout location={location}>
    <div className="image-explanation-div">
@@ -19,8 +19,7 @@ export default ({location}) => (
      </div>
      </div>
    <div className="video-explanation-div">
-     
-   <iframe src='https://gfycat.com/ifr/FamiliarObviousGazelle' className="giphy-embed" frameborder='0' scrolling='no'   allowfullscreen></iframe>
+ <img className="giphy-embed"src={gif}/>
     <div className="giphy-info">
      
      <p className="information2">MogwaiJS brings to life an intuitive OGM, keeping
