@@ -11,31 +11,8 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(280px, 750px));
   grid-gap: 50px;
+  grid-template-rows: 1fr;
   margin-bottom: 35px;
-}
-
-.member {
-  -webkit-animation: fadeIn 1s; /* Safari 4+ */
-  -moz-animation:    fadeIn 1s; /* Fx 5+ */
-  -o-animation:      fadeIn 1s; /* Opera 12+ */
-  animation:         fadeIn 1s; 
-  /* display: flex;
-  margin-bottom: 20px;
-  border: black;
-  border-style: solid;
-  border-radius: 10%;
-  padding-top: 20px;
-  min-width: 700px; */
-
-  
-    /* margin-bottom: 20px; */
-    /* border: black; */
-
-    /* padding-top: 20px;
-    margin-bottom: 20px; */
-    /* 
-    flex-direction: column;
-    min-width: 1111px; */
 }
 
 .name {
@@ -70,9 +47,14 @@ ul {
 
 
 
+
 .cards {
   display: flex;
   box-shadow: 0 2px 3px 5px rgb(142, 108, 165, .1);
+  -webkit-animation: fadeIn 1s; /* Safari 4+ */
+  -moz-animation:    fadeIn 1s; /* Fx 5+ */
+  -o-animation:      fadeIn 1s; /* Opera 12+ */
+  animation:         fadeIn 1s;
 }
 
 /* .icon-and-name {
@@ -81,37 +63,68 @@ ul {
 } */
 
 .biopictures {
-  border-radius: 100px;
-  max-width: 200px;
-  max-height: 230px;
+  border-radius: 100%;
+  border: 3px solid rgb(142, 108, 165, .7);
+  max-width: 50%;
+  max-height: 50%;
  float: right;
  margin: 10px;
 }
 
 .bio-block {
   text-align: center;
+
 }
 
 .aboutUs-heading {
+  flex-basis: 100%;
   display: flex;
   justify-content: center;
 }
 
 .icon-and-name {
   margin-top: 10px;
+  /* border-radius: 20px;
+  background-color: rgb(142, 108, 165, ); */
 }
+
 
 .aboutUs {
   border-right: 3px solid rgb(142, 108, 165);
   margin-right: 5px;
   margin-top: 10px;
-  padding: 5px;
+  padding: 10px 15px 10px 10px;
+
 }
 
 .github {
   margin-left: 5px;
+  color: rgb(137, 68, 184);
+}
+
+.github:hover {
+  color: rgba(137, 68, 184, .5);
+}
+
+.linkedIn {
+  color: rgb(137, 68, 184);
+}
+
+.linkedIn:hover {
+  color: rgba(137, 68, 184, .5);
 }
 
 .subheading {
-  margin-top: 25px;
+  margin-top: 33px;
+  margin-left: 10px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .form {
+    grid-template-columns: minmax(280px, 750px);
+  }
+
+  
 }

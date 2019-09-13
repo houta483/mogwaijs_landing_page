@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import DocBlock from "../components/Docs"
 
 export default ({location}) => (
   <Layout location={location}>
@@ -12,6 +13,10 @@ export default ({location}) => (
       <li>Under The Hood</li>
       <li>Demo</li>
     </ul>
+   
+    </div>
+    <div className="DocBlock">
+    <DocBlock/>
     </div>
   </Layout>
 )

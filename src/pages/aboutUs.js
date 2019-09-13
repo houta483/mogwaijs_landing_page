@@ -16,6 +16,7 @@ export default props => {
         bio={memberData.memberBios[i]}
         picture={memberData.pictures[i]}
         linkedIn={memberData.linkedIn[i]}
+        gitHub={memberData.gitHub[i]}
         key={i}
       />
     )

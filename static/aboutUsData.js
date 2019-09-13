@@ -13,7 +13,7 @@ const aboutUsData = {
   ],
   pictures: [eric, neftali, tanner, taylor],
   linkedIn: ['https://www.linkedin.com/in/ericstallings/', 'https://www.linkedin.com/in/neftalildominguez/', 'https://www.linkedin.com/in/tanner-houghton-180ba114b/', 'https://www.linkedin.com/in/taylorburrington/'],
-  gitHub: ['']
+  gitHub: ['https://github.com/EricStallings', 'https://github.com/ndominguez23','https://github.com/houta483', 'https://github.com/Tburrington']
 }
 
 export default aboutUsData;
