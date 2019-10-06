@@ -109,6 +109,28 @@ export default ({ location }) => (
         </p>
       </div>
     </div>
+    <footer id="footer"><i id="pizza" class="material-icons">
+local_pizza
+</i>
+<i id="pizza" class="material-icons">
+local_pizza
+</i>
+<i id="pizza" class="material-icons">
+local_pizza
+</i>
+<i id="pizza" class="material-icons">
+local_pizza
+</i>
+<i id="pizza" class="material-icons">
+local_pizza
+</i>
+<i id="pizza" class="material-icons">
+local_pizza
+</i>
+<i id="pizza" class="material-icons">
+local_pizza
+</i>
+</footer>
   </div>
   //  </Layout>
 )
