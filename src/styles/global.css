@@ -13,21 +13,35 @@ html {
 
 .header {
 display: flex;
-justify-content: space-between;
-border-bottom: 1px solid rgb(161, 161, 161);
-margin-bottom: 0;
+justify-content: flex-end;
+align-content: center;
+padding-top: 1.8rem;
 }
 
+#main-heading {
+  font-size: 1.8rem;
+  margin-right: 5vw;
+  color: #6458Ae;
+  font-weight: lighter;
+  border: 1px solid #6458Ae;
+  padding: 25px;
+  border-radius: 20px;
+}
 
 h3 {
   font-family: 'Lobster', cursive;
+  margin-right: 10px;
 }
 .image-explanation-div {
   display: grid;
   grid-template-columns: minmax(280px, 750px) minmax(280px, 750px);
   grid-gap: 5vw;
   margin-left: 5vw;
-  margin-top: 10vh;
+
+}
+
+.left-side-column {
+ padding-top: 2rem;
 }
 
 .material-icons {
@@ -48,6 +62,18 @@ h3 {
   -moz-animation:    fadeIn 2s; /* Fx 5+ */
   -o-animation:      fadeIn 2s; /* Opera 12+ */
   animation:         fadeIn 2s; 
+  margin-bottom: 15px;
+  /* background: rgb(185, 175, 250);
+  height: 60%;
+  transform: skewY(3deg);
+  transform-origin: 100%;
+  z-index: -1;
+  padding: 10px;
+  margin-top: 50px; */
+} 
+
+#bottom-paragraph {
+  margin-bottom: 0px;
 }
 
 .lists-link {
@@ -74,10 +100,31 @@ h3 {
   color: #777;
 }
 
-#github-icon {
+/* #github-icon {
   margin: 5px 8px 5px 5px;
+} */
+
+.left-github-icon {
+  margin-left: 10px;
+  color:#6458Ae;
 }
 
+.left-github-icon:hover {
+  color:rgb(144, 133, 212);
+}
+
+.right-icon {
+  margin-right: 10px;
+}
+
+#wasm-ferris {
+  max-width: 40%
+}
+
+#mogwai {
+  max-width: 50%;
+  width: 100%;
+}
 
 .giphy-info {
   display: flex;
@@ -86,8 +133,8 @@ h3 {
 
 .information2 {
   font-family: 'Raleway', sans-serif;
-  color: #6458Ae;
-  margin: 5px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
   -webkit-animation: fadeIn 2s; /* Safari 4+ */
   -moz-animation:    fadeIn 2s; /* Fx 5+ */
   -o-animation:      fadeIn 2s; /* Opera 12+ */
@@ -95,15 +142,36 @@ h3 {
 }
 
 .video-explanation-div {
-  display: grid;
-  grid-template-columns: minmax(280px, 750px) minmax(280px, 750px);
-  grid-gap: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  background: #FCF9FE;
-  border-radius: 10px;
+  padding: 5vh 5vw;
+  background: #492598;
+
+  transform: skewY(3deg);
+  transform-origin: 100%;
+  z-index: -1;
+  content: ''
+}
+.right-column-heading {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-animation: fadeIn 2s; /* Safari 4+ */
+  -moz-animation:    fadeIn 2s; /* Fx 5+ */
+  -o-animation:      fadeIn 2s; /* Opera 12+ */
+  animation:         fadeIn 2s; 
+  color: rgb(255, 255, 255);
+}
+
+#bottom-div {
+  transform: skewY(-3deg);
+}
+
+#information2-div {
+  transform: skewY(-3deg);
+  margin-left: 10vw;
 }
 
 .right {
@@ -118,8 +186,17 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
 
+#recent-talks-heading {
+  transform: skewY(3deg);
+}
+
+#bottom-div-info {
+  transform: skewY(3deg);
+  margin-left: 10vw;
+}
 
 
 .right {
@@ -128,7 +205,7 @@ h3 {
 }
 
 .left {
-  border: solid #6458Ae;
+  border: solid rgb(255, 255, 255);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -143,8 +220,17 @@ h3 {
   max-width: 100%;
   max-height: 100%;
   float: left;
+  transform: skewY(-3deg);
 }
 
+#plantFare {
+  box-shadow: 0 6px 15px 9px rgba(72,72,72,.4);
+  max-width: 90%;
+}
+
+#final-div {
+  transform: skewY(-3deg);
+}
 
 .main-heading {
   font-family: 'Montserrat', sans-serif;
@@ -242,6 +328,12 @@ h3 {
   .main-content {
     max-width: 1320px;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 950px){
+  .video-explanation-div {
+    flex-wrap: wrap-reverse;
   }
 }
 

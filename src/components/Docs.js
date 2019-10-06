@@ -29,7 +29,7 @@ export default()=> (
         <h1 className="doc-heading">Demo</h1>
         <p className="docs-paragraph">The main advantage of Mogwai is that it provides Javascript accessbility to a variety of cloud hosted databases. 
             In the following example, Mogwai is being used to query an Azure Cosmos database:
-            <a href="https://medium.com/@stallings.eric/introducing-mogwaijs-f5a356d55c08"><img src={picture}/></a>
+            <a href="https://medium.com/@stallings.eric/introducing-mogwaijs-f5a356d55c08"><img alt="graph display" src={picture}/></a>
         </p>
     </div>
 )
